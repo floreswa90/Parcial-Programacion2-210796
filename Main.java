@@ -4,6 +4,8 @@ public class Main {
         Vendedor vendedor =
             new Vendedor("Walter", 1000.0, new ComisionEstandar());
 
+        vendedor.cambiarEstrategia(new ComisionPersonalizada(6));
+
         vendedor.mostrarDetalle();
     }
 }
